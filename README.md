@@ -12,6 +12,9 @@ Git
 ### Script 1: System Identity
 Displays system info like kernel,user,uptime.
 
+### Script 2: FOSS Package Inspector
+Checks whether a package (Git) is installed and shows its version and purpose.
+
 ### Script 3: Disk Auditor
 Shows directory size and permissions.
 
