@@ -1,15 +1,15 @@
 #!/bin/bash
 
-DIRS=("/c" "/c/Users" "/tmp")
+DIRS=("/c" "/c/Users" ".")
 
 echo "Directory Audit Report"
 echo "----------------------"
 
 for DIR in "${DIRS[@]}"; do
-      if [ -d "$DIR" ] then
-          PERMS=$(ls -ld $DIR | awk '{print $1, $3, $4}')
-          SIZE=$(du -sh $DIR 2>/dev/null | cut -f1)
-          echo "$DIR => Permissions: $PERMS  | Size: $SIZE"
+      if [ -d "$DIR" ]; then
+          echo "Directory: $DIR"
+          ls -ld "$DIR"
+          echo "---------------------"
       else
           echo "$DIR does not exist"
       fi

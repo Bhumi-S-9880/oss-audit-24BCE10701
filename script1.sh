@@ -1,6 +1,6 @@
 #!/bin/bash
 
-STUDENT_NAME="Your Name"
+STUDENT_NAME="Bhumi Soni"
 SOFTWARE_CHOICE="Git"
 
 KERNEL=$(uname -r)

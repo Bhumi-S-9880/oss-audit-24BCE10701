@@ -3,7 +3,7 @@
 PACKAGE="git"
 
 if which $PACKAGE >/dev/null 2>&1; then
-      echo "$PACKAGE --version
+      echo "$PACKAGE --version"
 else
     echo "$PACKAGE is NOT installed."
 fi
